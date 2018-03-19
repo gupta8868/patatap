@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="paper-full.js"></script>
+	<script type="text/paperscript" canvas="myCanvas">
+
+		var circles = [];
+
+			
+			for(var i=0; i<10000 ; i=i+100)
+			{
+					for(var j=0; j<10000 ; j+=100)
+					{
+						var myCircle= new Path.Circle(new Point(0+i, 0+j), 10);
+								myCircle.fillColor = "red";
+								circles.push(myCircle);
+					}
+			}
+			function onFrame(event)
+				{
+					for(var i=0; i<circles.length; i++)
+					{
+						circles[i].fillColor.hue+=1;
+					}
+					
+				}
+		
+
+
+	
+</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+
+</body>
+</html>
