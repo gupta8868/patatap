@@ -1,6 +1,6 @@
 # PATATAP
 
-Created a web page that allows to create music and flashing circles when a keyboard key (a-z) is pressed. 
+A web page that allows to create music and flashing circles when a keyboard key (a-z) is pressed. 
 
 A different music is associated with every key.
 
